@@ -62,7 +62,8 @@ RUN yum -y install \
     php-opcache \
     php-gd \
     php-curl \
-    php-ldap
+    php-ldap \
+    php-zip
 
 RUN yum -y clean all \
 	&& rm -rf /var/cache/yum

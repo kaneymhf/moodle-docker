@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "$DOCKER_TOKEN" | docker login -u "$DOCKER_USER" --password-stdin
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 docker push kaneymhf/moodle
