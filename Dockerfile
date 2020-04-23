@@ -42,7 +42,7 @@ RUN yum -y install \
     jq \
     gcc \
     make \
-    unzip
+    unzip 
 
 RUN if [ $DB_TYPE = 'mysqli' ] || [ $DB_TYPE = 'all' ]; \
     then echo "Setup mysql and mariadb support" && \
@@ -63,7 +63,7 @@ RUN yum -y install \
     php-gd \
     php-curl \
     php-ldap \
-    php-zip
+    php-pecl-zip
 
 RUN yum -y clean all \
 	&& rm -rf /var/cache/yum
