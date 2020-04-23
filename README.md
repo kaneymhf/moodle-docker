@@ -1,17 +1,30 @@
+docker-moodle [![Build Status](https://travis-ci.org/kaneymhf/moodle-docker.svg?branch=master)](https://travis-ci.com/github/kaneymhf/moodle-docker)
 =============
 
 A Docker image that installs and runs the latest Moodle stable, with external MySQL, Mariadb or Postgresql Database and automated installation with a default predefined administrator user. Also all the images are availalbe via [docker hub](https://hub.docker.com/r/kaneymhf/
 moodle/).
 
-Forked of: 
-
 ## Available Images
 
-With apache based on `php:7.4-apache` image:
+With apache based on `centos:7` image:
 
-VERSION | all databases (mysql, mariadb, postgresql)
---- | --- | --- | ---
+**All Databases**
+VERSION | TAGS
+--- | ---
+3.5 | `kaneymhf/moodle:35` `kaneymhf/moodle:lts`
 3.8 | `kaneymhf/moodle:38` `kaneymhf/moodle:latest`
+
+**MySQL | MariaDB**
+VERSION | TAGS
+--- | ---
+3.5 | `kaneymhf/moodle:mysql_maria_35` `kaneymhf/moodle:mysql_maria_lts`
+3.8 | `kaneymhf/moodle:mysql_maria_38` `kaneymhf/moodle:mysql_maria_latest`
+
+**PostgreSQL**
+VERSION | TAGS
+--- | ---
+3.5 | `kaneymhf/moodle:postgresql_35` `kaneymhf/moodle:postgresql_lts`
+3.8 | `kaneymhf/moodle:postgresql_38` `kaneymhf/moodle:postgresql_latest`
 
 ### Enviromental Variables for Default user settings:
 
@@ -124,4 +137,4 @@ export COMPOSE_HTTP_TIMEOUT=120
 
 ## Credits
 
-This is a fork of [ellakcy/moodle](https://hub.docker.com/r/ellakcy/moodle).
+This repository is based on [ellakcy/moodle](https://hub.docker.com/r/ellakcy/moodle), but its not a fork.
