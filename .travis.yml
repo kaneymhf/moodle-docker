@@ -12,12 +12,12 @@ env:
     - LATEST=38
     - LATEST_LTS=35
   jobs:
-    - "DB_TYPE=all VERSION=35 DOCKERFILE=Dockerfile"
-    - "DB_TYPE=mysqli VERSION=35 DOCKERFILE=Dockerfile"
-    - "DB_TYPE=pgsql  VERSION=35 DOCKERFILE=Dockerfile"
-    - "DB_TYPE=all VERSION=38 DOCKERFILE=Dockerfile"
-    - "DB_TYPE=mysqli VERSION=38 DOCKERFILE=Dockerfile"
-    - "DB_TYPE=pgsql  VERSION=38 DOCKERFILE=Dockerfile"
+    - "DB_TYPE=all VERSION=35 DOCKERFILE=./Dockerfile"
+    - "DB_TYPE=mysqli VERSION=35 DOCKERFILE=./Dockerfile"
+    - "DB_TYPE=pgsql  VERSION=35 DOCKERFILE=./Dockerfile"
+    - "DB_TYPE=all VERSION=38 DOCKERFILE=./Dockerfile"
+    - "DB_TYPE=mysqli VERSION=38 DOCKERFILE=./Dockerfile"
+    - "DB_TYPE=pgsql  VERSION=38 DOCKERFILE=./Dockerfile"
 
 script: bash ./travis/build.sh
 

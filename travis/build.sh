@@ -1,7 +1,5 @@
 #!/bin/bash
 
-DOCKERFILE="../Dockerfile"
-
 DB_FLAVOR=""
 case $DB_TYPE in
     "mysqli" ) DB_FLAVOR="mysql_maria" ;;
